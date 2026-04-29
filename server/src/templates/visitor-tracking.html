@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Visitor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9fafb;
+      padding: 24px;
+    "
+  >
+    <div
+      style="
+        max-width: 600px;
+        margin: auto;
+        background: #ffffff;
+        padding: 24px;
+        border-radius: 8px;
+      "
+    >
+      <h2 style="margin-bottom: 16px">👀 New Visitor Activity 😊</h2>
+
+      {{#if hasValidLocation}}
+      <p style="margin-bottom: 16px">
+        A new visitor just accessed your website from {{city}}, {{region}}, 
+        {{country}}.
+      </p>
+      {{else}}
+      <p style="margin-bottom: 16px">
+        A new visitor just accessed your website😁.
+      </p>
+      {{/if}} {{#if hasValidLocation}}
+      <h3 style="margin-top: 24px">📍 Location Information</h3>
+      <ul style="list-style: none; padding: 0; margin: 0">
+        <li><strong>Continent:</strong> {{continent}}</li>
+        <li><strong>Country:</strong> {{country}} ({{countryCode}})</li>
+        <li><strong>Region / State:</strong> {{region}}</li>
+        <li><strong>District:</strong> {{district}}</li>
+        <li><strong>City:</strong> {{city}}</li>
+      </ul>
+
+      <h3 style="margin-top: 24px">🗺 Map</h3>
+      <p>
+        <a href="{{mapsLink}}" target="_blank">Open in Google Maps</a>
+      </p>
+
+      <iframe
+        width="100%"
+        height="800px"
+        style="border-radius: 8px; border: 0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q={{latitude}},{{longitude}}&output=embed"
+      ></iframe>
+      {{else}}
+      <h3 style="margin-top: 24px">📍 Location Information</h3>
+      <p style="color: #6b7280">
+        Location data is unavailable (local or private IP).
+      </p>
+      {{/if}}
+
+      <h3 style="margin-top: 24px">🌍 Information</h3>
+      <ul style="list-style: none; padding: 0; margin: 0">
+        <li><strong>Timezone:</strong> {{timezone}}</li>
+        <li><strong>Visit Time:</strong> {{serverTimestamp}}</li>
+        <li><strong>Languages:</strong> {{languages}}</li>
+        <li><strong>IP Address:</strong> {{ip}}</li>
+        <li><strong>Network:</strong> {{network}}</li>
+      </ul style="list-style: none; padding: 0; margin: 0">
+
+      <h3 style="margin-top: 24px">🖥 Information</h3>
+      <ul style="list-style: none; padding: 0; margin: 0">
+
+        <li><strong>Referrer:</strong> {{referrer}}</li>
+        <li><strong>Full URL:</strong> {{pageUrl}}</li>
+        <li><strong>Device Type:</strong> {{deviceType}}</li>
+        <li><strong>Platform:</strong> {{platform}}</li>
+        <li><strong>Operating System:</strong> {{os}} {{osVersion}}</li>
+        <li><strong>Browser:</strong> {{browser}} {{browserVersion}}</li>
+        <li>
+          <strong>Screen:</strong> {{screenWidth}}×{{screenHeight}}
+          ({{pixelRatio}}x)
+        </li>
+
+      </ul>
+
+      <h3 style="margin-top: 24px"></h3>
+
+      <hr style="margin: 32px 0" />
+
+      <p style="font-size: 14px; color: #6b7280">
+        This is an automated notification from {{siteName}}
+      </p>
+    </div>
+  </body>
+</html>
