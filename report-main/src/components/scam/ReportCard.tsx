@@ -45,7 +45,9 @@ export default function ReportCard({ report }: ReportCardProps) {
           alt={report.title}
           className="w-full h-48 object-cover"
         />
-        <span className={`absolute top-4 left-4 ${getSeverityColor(report.severity)} text-white px-3 py-1 rounded-full text-xs font-medium`}>
+        <span
+          className={`absolute top-4 left-4 ${getSeverityColor(report.severity)} text-white px-3 py-1 rounded-full text-xs font-medium`}
+        >
           {report.severity}
         </span>
         <span className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium">
@@ -79,7 +81,9 @@ export default function ReportCard({ report }: ReportCardProps) {
         </div>
 
         <div className="flex items-center justify-between">
-          <div className={`text-lg font-bold ${getSeverityTextColor(report.severity)}`}>
+          <div
+            className={`text-lg font-bold ${getSeverityTextColor(report.severity)}`}
+          >
             {report.severity}
           </div>
           <Link

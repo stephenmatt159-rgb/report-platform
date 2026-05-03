@@ -1,4 +1,11 @@
-import { ScamReportService, ContributorService, SuccessStoryService, AwarenessArticleService, ScamCategoryService, PlatformStatService } from '@/data/mockData';
+import {
+  ScamReportService,
+  ContributorService,
+  SuccessStoryService,
+  AwarenessArticleService,
+  ScamCategoryService,
+  PlatformStatService,
+} from '@/data/mockData';
 import ReportCard from '@/components/scam/ReportCard';
 import ContributorCard from '@/components/contributor/ContributorCard';
 import TestimonialCard from '@/components/ui/TestimonialCard';
@@ -10,13 +17,20 @@ import { getHomeMetadata } from '@/lib/metadata';
 export const metadata: Metadata = getHomeMetadata();
 
 export default async function Home() {
-  const [scamReports, contributors, successStories, awarenessArticles, scamCategories, platformStats] = await Promise.all([
+  const [
+    scamReports,
+    contributors,
+    successStories,
+    awarenessArticles,
+    scamCategories,
+    platformStats,
+  ] = await Promise.all([
     ScamReportService.getAllScamReports(),
     ContributorService.getAllContributors(),
     SuccessStoryService.getAllSuccessStories(),
     AwarenessArticleService.getAllAwarenessArticles(),
     ScamCategoryService.getAllScamCategories(),
-    PlatformStatService.getAllPlatformStats()
+    PlatformStatService.getAllPlatformStats(),
   ]);
 
   return (
@@ -35,7 +49,8 @@ export default async function Home() {
                 Where Awareness Meets Action
               </h1>
               <p className="text-lg text-black">
-                Join our community to report, track, and prevent scams. Together we can build a safer digital world for everyone.
+                Join our community to report, track, and prevent scams. Together
+                we can build a safer digital world for everyone.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
@@ -43,7 +58,7 @@ export default async function Home() {
                   placeholder="Search scam reports here"
                   className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 />
-                <button className="px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg bg-yellow-500 transition-colors">
+                <button className="px-6 py-3  text-gray-900 font-semibold rounded-lg bg-yellow-500 transition-colors">
                   Search
                 </button>
               </div>
@@ -59,7 +74,9 @@ export default async function Home() {
                   <span className="text-2xl">👤</span>
                   <div>
                     <div className="text-2xl font-bold">4500+</div>
-                    <div className="text-sm text-gray-600">Active reporters</div>
+                    <div className="text-sm text-gray-600">
+                      Active reporters
+                    </div>
                   </div>
                 </div>
               </div>
@@ -75,20 +92,47 @@ export default async function Home() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Start your journey With us</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              Start your journey With us
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We offer a brand new approach to scam prevention and awareness. Join our community to protect yourself and others from online fraud.
+              We offer a brand new approach to scam prevention and awareness.
+              Join our community to protect yourself and others from online
+              fraud.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { number: '01', title: 'Expert Investigators', description: 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.' },
-              { number: '02', title: 'Quality Reports', description: 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.' },
-              { number: '03', title: 'Real-Time Alerts', description: 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.' },
-              { number: '04', title: 'Community Support', description: 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.' }
+              {
+                number: '01',
+                title: 'Expert Investigators',
+                description:
+                  'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.',
+              },
+              {
+                number: '02',
+                title: 'Quality Reports',
+                description:
+                  'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.',
+              },
+              {
+                number: '03',
+                title: 'Real-Time Alerts',
+                description:
+                  'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.',
+              },
+              {
+                number: '04',
+                title: 'Community Support',
+                description:
+                  'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.',
+              },
             ].map((feature, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              >
                 <img
                   src={`/images/e${index + 1}.png`}
                   alt={feature.title}
@@ -119,13 +163,15 @@ export default async function Home() {
                 We Are Building A Safer Digital World Together
               </h2>
               <p className="text-gray-600">
-                We offer a brand new approach to scam prevention and awareness. Join our community to protect yourself and others from online fraud.
+                We offer a brand new approach to scam prevention and awareness.
+                Join our community to protect yourself and others from online
+                fraud.
               </p>
               <ul className="space-y-3">
                 {[
                   'Get access to 12,000+ verified scam reports',
                   'Popular scam types to watch for in our community',
-                  'Find the right resources for protection'
+                  'Find the right resources for protection',
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-2">
                     <span className="text-green-500">✓</span>
@@ -148,9 +194,13 @@ export default async function Home() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Find out by popular Scam Types</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              Find out by popular Scam Types
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We offer a brand new approach to scam prevention and awareness. Choose from a wide range of scam types and learn how to protect yourself!
+              We offer a brand new approach to scam prevention and awareness.
+              Choose from a wide range of scam types and learn how to protect
+              yourself!
             </p>
           </div>
 
@@ -177,7 +227,9 @@ export default async function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold mb-2">
-                Join with more than <span className="text-blue-600">80,000+</span> Verified Reports & Community Contributors.
+                Join with more than{' '}
+                <span className="text-blue-600">80,000+</span> Verified Reports
+                & Community Contributors.
               </h2>
             </div>
             <a
@@ -201,7 +253,8 @@ export default async function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold">
-              Trusted by <span className="text-blue-600">86,000+</span> organizations worldwide
+              Trusted by <span className="text-blue-600">86,000+</span>{' '}
+              organizations worldwide
             </h3>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-8">
@@ -238,9 +291,12 @@ export default async function Home() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Meet Our Contributors</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              Meet Our Contributors
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We offer a brand new approach to scam prevention and awareness. Join our community of dedicated contributors making a difference!
+              We offer a brand new approach to scam prevention and awareness.
+              Join our community of dedicated contributors making a difference!
             </p>
           </div>
 
@@ -261,13 +317,15 @@ export default async function Home() {
                 Why Choose Our Scam Reporting Platform
               </h2>
               <p className="text-gray-600">
-                We offer a brand new approach to scam prevention and awareness. Join our community to protect yourself and others from online fraud.
+                We offer a brand new approach to scam prevention and awareness.
+                Join our community to protect yourself and others from online
+                fraud.
               </p>
               <ul className="space-y-3">
                 {[
                   'Get access to 12,000+ verified scam reports',
                   'Popular scam types to watch for in our community',
-                  'Find the right resources for protection'
+                  'Find the right resources for protection',
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-2">
                     <span className="text-green-500">✓</span>
@@ -293,7 +351,9 @@ export default async function Home() {
                   <span className="text-2xl">📚</span>
                   <div>
                     <div className="text-2xl font-bold">3300+</div>
-                    <div className="text-sm text-gray-600">Verified Reports</div>
+                    <div className="text-sm text-gray-600">
+                      Verified Reports
+                    </div>
                   </div>
                 </div>
               </div>
@@ -323,9 +383,12 @@ export default async function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Latest Scam Awareness Articles</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              Latest Scam Awareness Articles
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We offer a brand new approach to scam prevention and awareness. Stay informed with our latest articles and guides!
+              We offer a brand new approach to scam prevention and awareness.
+              Stay informed with our latest articles and guides!
             </p>
           </div>
 
