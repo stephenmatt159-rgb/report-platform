@@ -90,7 +90,7 @@ export default async function Home() {
             ].map((feature, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <img
-                  src={`/images/e${index + 1}.png`}
+                  src={`/images/ex${index + 1}.png`}
                   alt={feature.title}
                   className="mb-4"
                   style={{ height: '48px' }}
