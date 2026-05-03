@@ -29,21 +29,21 @@ export default async function Home() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h1 className="text-4xl lg:text-6xl font-bold">
-                <span className="text-yellow-400">ScamReport</span>
+              <h1 className="text-4xl lg:text-6xl font-bold text-black drop-shadow-lg">
+                <span className="text-amber-400">ScamReport</span>
                 <br />
-                Where Awareness Meets Action
+                Protect Yourself. Warn Others.
               </h1>
-              <p className="text-lg text-black">
-                Join our community to report, track, and prevent scams. Together we can build a safer digital world for everyone.
+              <p className="text-lg text-gray-500 drop-shadow">
+                Join the community fighting back against fraud. Report scams, track threats, and help keep others safe.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="text"
                   placeholder="Search scam reports here"
-                  className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  className="flex-1 px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500"
                 />
-                <button className="px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg bg-yellow-500 transition-colors">
+                <button className="px-6 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors">
                   Search
                 </button>
               </div>
@@ -58,8 +58,8 @@ export default async function Home() {
                 <div className="flex items-center space-x-2">
                   <span className="text-2xl">👤</span>
                   <div>
-                    <div className="text-2xl font-bold">4500+</div>
-                    <div className="text-sm text-gray-600">Active reporters</div>
+                    <div className="text-2xl font-bold">684+</div>
+                    <div className="text-sm text-gray-800">Community Members</div>
                   </div>
                 </div>
               </div>
@@ -76,17 +76,17 @@ export default async function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Start your journey With us</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-800 max-w-2xl mx-auto">
               We offer a brand new approach to scam prevention and awareness. Join our community to protect yourself and others from online fraud.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { number: '01', title: 'Expert Investigators', description: 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.' },
-              { number: '02', title: 'Quality Reports', description: 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.' },
-              { number: '03', title: 'Real-Time Alerts', description: 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.' },
-              { number: '04', title: 'Community Support', description: 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit ut labore.' }
+              { number: '01', title: 'Expert Investigators', description: 'Our team of cybersecurity professionals verifies every report to ensure accuracy and reliability.' },
+              { number: '02', title: 'Quality Reports', description: 'Detailed, verified scam reports with evidence, warning signs, and prevention tips from our community.' },
+              { number: '03', title: 'Real-Time Alerts', description: 'Get instant notifications about new scams in your area and emerging threats targeting your demographic.' },
+              { number: '04', title: 'Community Support', description: 'Join thousands of members who share information, support victims, and collaborate to stop fraud.' }
             ].map((feature, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <img
@@ -95,8 +95,8 @@ export default async function Home() {
                   className="mb-4"
                   style={{ height: '48px' }}
                 />
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-amber-600">{feature.title}</h3>
+                <p className="text-gray-800">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -116,16 +116,17 @@ export default async function Home() {
             </div>
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold">
-                We Are Building A Safer Digital World Together
+                Building a Safer Digital World, Together
               </h2>
-              <p className="text-gray-600">
-                We offer a brand new approach to scam prevention and awareness. Join our community to protect yourself and others from online fraud.
+              <p className="text-gray-800">
+                ScamReport is a community-powered platform where victims become advocates and vigilance becomes prevention. We don't just track scams—we expose them, educate the public, and help law enforcement take action.
               </p>
               <ul className="space-y-3">
                 {[
-                  'Get access to 12,000+ verified scam reports',
-                  'Popular scam types to watch for in our community',
-                  'Find the right resources for protection'
+                  'Over 130 verified scam reports with evidence and analysis',
+                  'Real-time warnings about emerging threats in your area',
+                  'Educational resources to recognize scams before you become a victim',
+                  'Direct support for victims to recover and report to authorities'
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-2">
                     <span className="text-green-500">✓</span>
@@ -149,7 +150,7 @@ export default async function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Find out by popular Scam Types</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-800 max-w-2xl mx-auto">
               We offer a brand new approach to scam prevention and awareness. Choose from a wide range of scam types and learn how to protect yourself!
             </p>
           </div>
@@ -177,7 +178,7 @@ export default async function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold mb-2">
-                Join with more than <span className="text-blue-600">80,000+</span> Verified Reports & Community Contributors.
+                Join a community with <span className="text-blue-600">130+</span> Verified Reports and <span className="text-blue-600">940+</span> Warnings Issued.
               </h2>
             </div>
             <a
@@ -239,7 +240,7 @@ export default async function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Meet Our Contributors</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-800 max-w-2xl mx-auto">
               We offer a brand new approach to scam prevention and awareness. Join our community of dedicated contributors making a difference!
             </p>
           </div>
@@ -258,16 +259,18 @@ export default async function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold">
-                Why Choose Our Scam Reporting Platform
+                Why Choose ScamReport?
               </h2>
-              <p className="text-gray-600">
-                We offer a brand new approach to scam prevention and awareness. Join our community to protect yourself and others from online fraud.
+              <p className="text-gray-800">
+                Unlike generic reporting sites, we specialize in scam investigation and community-driven prevention. Our team actively verifies reports, collaborates with law enforcement, and provides actionable intelligence to keep you and your community safe.
               </p>
               <ul className="space-y-3">
                 {[
-                  'Get access to 12,000+ verified scam reports',
-                  'Popular scam types to watch for in our community',
-                  'Find the right resources for protection'
+                  'Verified reports with evidence, screenshots, and documented warning signs',
+                  'Database of 50+ scam categories with detailed pattern recognition',
+                  'Exposure of fake investment platforms with track records of fraud',
+                  'Community of 680+ active contributors sharing real experiences',
+                  'Free access—everyone deserves to be protected from scams'
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-2">
                     <span className="text-green-500">✓</span>
@@ -293,7 +296,7 @@ export default async function Home() {
                   <span className="text-2xl">📚</span>
                   <div>
                     <div className="text-2xl font-bold">3300+</div>
-                    <div className="text-sm text-gray-600">Verified Reports</div>
+                    <div className="text-sm text-gray-800">Verified Reports</div>
                   </div>
                 </div>
               </div>
@@ -324,7 +327,7 @@ export default async function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Latest Scam Awareness Articles</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-800 max-w-2xl mx-auto">
               We offer a brand new approach to scam prevention and awareness. Stay informed with our latest articles and guides!
             </p>
           </div>

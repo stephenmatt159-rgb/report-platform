@@ -16,7 +16,7 @@ export default function BlogCard({ post }: BlogCardProps) {
       />
 
       <div className="p-6">
-        <div className="flex items-center space-x-2 text-sm text-gray-500 mb-3">
+        <div className="flex items-center space-x-2 text-sm text-gray-800 mb-3">
           <span>{formatDate(post.date)}</span>
           <span>•</span>
           <Link
@@ -36,7 +36,7 @@ export default function BlogCard({ post }: BlogCardProps) {
           </Link>
         </h3>
 
-        <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+        <p className="text-gray-800 text-sm mb-4 line-clamp-2">
           {post.excerpt}
         </p>
 

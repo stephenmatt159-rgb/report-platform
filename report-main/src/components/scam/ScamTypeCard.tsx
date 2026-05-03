@@ -29,7 +29,7 @@ export default function ScamTypeCard({ scamType }: ScamTypeCardProps) {
           </Link>
         </h3>
 
-        <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
+        <div className="flex items-center justify-between text-sm text-gray-800 mb-4">
           <div className="flex items-center space-x-1">
             <span>📋</span>
             <span>{scamType.reportCount} Verified Reports</span>
@@ -41,7 +41,7 @@ export default function ScamTypeCard({ scamType }: ScamTypeCardProps) {
         </div>
 
         <div className="flex items-center justify-between">
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-gray-800">
             Learn about this scam type
           </div>
           <Link

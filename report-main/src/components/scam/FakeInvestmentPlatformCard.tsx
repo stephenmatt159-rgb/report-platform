@@ -36,7 +36,7 @@ export default function FakeInvestmentPlatformCard({ platform }: FakeInvestmentP
       </div>
 
       <div className="p-6">
-        <div className="flex items-center justify-between text-sm text-gray-600 mb-3">
+        <div className="flex items-center justify-between text-sm text-gray-800 mb-3">
           <div className="flex items-center space-x-1">
             <span>📅</span>
             <span>Exposed: {new Date(platform.dateExposed).toLocaleDateString()}</span>
@@ -56,14 +56,14 @@ export default function FakeInvestmentPlatformCard({ platform }: FakeInvestmentP
           </Link>
         </h3>
 
-        <p className="text-sm text-gray-500 mb-3">{platform.type}</p>
+        <p className="text-sm text-gray-800 mb-3">{platform.type}</p>
 
-        <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+        <p className="text-gray-800 text-sm mb-4 line-clamp-3">
           {platform.description}
         </p>
 
         <div className="flex items-center justify-between">
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-gray-800">
             <span className="text-red-600 font-medium">{platform.victimCount}</span> victims affected
           </div>
           <Link
