@@ -17,12 +17,12 @@ export default function ContributorCard({ contributor }: ContributorCardProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         <div className="absolute bottom-4 left-4 right-4">
           <h3 className="text-white text-xl font-bold">{contributor.name}</h3>
-          <p className="text-gray-200 text-sm">{contributor.role}</p>
+          <p className="text-gray-300 text-sm">{contributor.role}</p>
         </div>
       </div>
 
       <div className="p-6">
-        <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
+        <div className="flex items-center justify-between text-sm text-gray-800 mb-4">
           <div className="flex items-center space-x-1">
             <span>📋</span>
             <span>{contributor.reportsFiled} Reports</span>

@@ -17,7 +17,7 @@ export default function InstructorCard({ instructor }: InstructorCardProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         <div className="absolute bottom-4 left-4 right-4">
           <h3 className="text-white text-xl font-bold">{instructor.name}</h3>
-          <p className="text-gray-200 text-sm">{instructor.role}</p>
+          <p className="text-gray-300 text-sm">{instructor.role}</p>
         </div>
       </div>
 

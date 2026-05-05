@@ -18,7 +18,7 @@ export default function CounterSection({ stats }: CounterSectionProps) {
               <div className="text-3xl font-bold text-blue-600 mb-1">
                 <CountUp end={stat.value} start={0} duration={2.5} autoAnimate/>
               </div>
-              <div className="text-gray-600">{stat.label}</div>
+              <div className="text-gray-800">{stat.label}</div>
             </div>
           ))}
         </div>

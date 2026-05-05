@@ -40,7 +40,7 @@ export default function Footer() {
             <Link href="/" className="text-2xl font-bold text-blue-400">
               ScamReport
             </Link>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-300 text-sm">
               Building a safer digital world through community awareness and scam prevention.
             </p>
             <div className="flex space-x-4">
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
+                    className="text-gray-300 hover:text-white transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -82,7 +82,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
+                    className="text-gray-300 hover:text-white transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -99,7 +99,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
+                    className="text-gray-300 hover:text-white transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -109,17 +109,17 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <span className="text-blue-400 mt-1">📍</span>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-300 text-sm">
                   2570 Quadra Street Victoria Road, New York, Canada
                 </p>
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-blue-400">📞</span>
-                <p className="text-gray-400 text-sm">+88 457 845 695</p>
+                <p className="text-gray-300 text-sm">+88 457 845 695</p>
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-blue-400">📧</span>
-                <p className="text-gray-400 text-sm">example@yourmail.com</p>
+                <p className="text-gray-300 text-sm">example@yourmail.com</p>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-4">
-          <p className="text-center text-gray-400 text-sm">
+          <p className="text-center text-gray-300 text-sm">
             © {new Date().getFullYear()}. All Rights Reserved by{' '}
             <a href="https://bestwpware.com/" className="text-blue-400 hover:underline">
               Bestwpware

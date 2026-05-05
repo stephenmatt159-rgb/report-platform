@@ -13,7 +13,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
         ))}
       </div>
 
-      <p className="text-gray-600 mb-6 italic">"{testimonial.content}"</p>
+      <p className="text-gray-800 mb-6 italic">"{testimonial.content}"</p>
 
       <div className="flex items-center space-x-4">
         <img
@@ -23,7 +23,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
         />
         <div>
           <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-          <p className="text-sm text-gray-500">{testimonial.company}</p>
+          <p className="text-sm text-gray-800">{testimonial.company}</p>
         </div>
       </div>
     </div>

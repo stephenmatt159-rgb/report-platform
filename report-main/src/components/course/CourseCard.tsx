@@ -34,7 +34,7 @@ export default function CourseCard({ course }: CourseCardProps) {
           </Link>
         </h3>
 
-        <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
+        <div className="flex items-center justify-between text-sm text-gray-800 mb-4">
           <div className="flex items-center space-x-1">
             <span>📚</span>
             <span>{course.totalCourses} Course</span>
