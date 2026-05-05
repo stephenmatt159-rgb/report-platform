@@ -84,10 +84,16 @@ export default async function BlogDetailPage({
               ) : (
                 <div className="text-gray-700 leading-relaxed space-y-4">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
                   <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
                   </p>
                   <h2>Key Points</h2>
                   <ul>
@@ -96,11 +102,16 @@ export default async function BlogDetailPage({
                     <li>Third crucial aspect to understand</li>
                   </ul>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
                   </p>
                   <h2>Conclusion</h2>
                   <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit, sed quia consequuntur magni dolores eos qui
+                    ratione voluptatem sequi nesciunt.
                   </p>
                 </div>
               )}
@@ -110,7 +121,12 @@ export default async function BlogDetailPage({
             <div className="mt-8 pt-8 border-t">
               <h3 className="font-semibold mb-4">Tags</h3>
               <div className="flex flex-wrap gap-2">
-                {['Scam Prevention', 'Online Safety', 'Fraud Awareness', 'Consumer Protection'].map((tag) => (
+                {[
+                  'Scam Prevention',
+                  'Online Safety',
+                  'Fraud Awareness',
+                  'Consumer Protection',
+                ].map((tag) => (
                   <span
                     key={tag}
                     className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
@@ -150,9 +166,12 @@ export default async function BlogDetailPage({
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">{post.author}</h3>
-                  <p className="text-gray-600 text-sm mb-2">Scam Prevention Expert</p>
+                  <p className="text-gray-600 text-sm mb-2">
+                    Scam Prevention Expert
+                  </p>
                   <p className="text-gray-600 text-sm">
-                    Dedicated to educating the public about online scams and helping people protect themselves from fraud.
+                    Dedicated to educating the public about online scams and
+                    helping people protect themselves from fraud.
                   </p>
                 </div>
               </div>
@@ -164,13 +183,26 @@ export default async function BlogDetailPage({
             <h2 className="text-2xl font-bold mb-6">Related Safety Articles</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { title: 'How to Spot Fake Websites', date: 'May 15, 2024', desc: 'Learn the telltale signs of fraudulent websites and how to verify their authenticity.' },
-                { title: 'Protecting Your Financial Information', date: 'May 18, 2024', desc: 'Essential steps to safeguard your banking and financial data from online thieves.' }
+                {
+                  title: 'How to Spot Fake Websites',
+                  date: 'May 15, 2024',
+                  desc: 'Learn the telltale signs of fraudulent websites and how to verify their authenticity.',
+                },
+                {
+                  title: 'Protecting Your Financial Information',
+                  date: 'May 18, 2024',
+                  desc: 'Essential steps to safeguard your banking and financial data from online thieves.',
+                },
               ].map((article, i) => (
-                <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div
+                  key={i}
+                  className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+                >
                   <div className="h-40 bg-gradient-to-br from-red-100 to-orange-200"></div>
                   <div className="p-4">
-                    <div className="text-sm text-gray-600 mb-2">{article.date}</div>
+                    <div className="text-sm text-gray-600 mb-2">
+                      {article.date}
+                    </div>
                     <h3 className="font-semibold mb-2">{article.title}</h3>
                     <p className="text-gray-600 text-sm line-clamp-2">
                       {article.desc}

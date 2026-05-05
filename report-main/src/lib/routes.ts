@@ -23,6 +23,22 @@ const scamAwarenessArticle = (id: string) => `/blog/${id}`;
 const exposedPlatforms = () => '/exposed-platforms';
 const exposedPlatformDetail = (id: string) => `/exposed-platforms/${id}`;
 
+const access = () => '/access';
+const login = () => '/login';
+
+const dashboard = () => '/dashboard';
+
+// dashboard pages
+const dashboardOverview = () => `${dashboard()}/overview`;
+const people = () => `${dashboard()}/people`;
+const peopleDetails = (id: string | number = ':id') => `${people()}/${id}`;
+const dashboardAnalytics = () => `${dashboard()}/analytics`;
+const dashboardClients = () => `${dashboard()}/clients`;
+const dashboardJobSearch = () => `${dashboard()}/job-search`;
+const dashboardBlog = () => `${dashboard()}/blog`;
+const dashboardBlogDetails = (id: string | number = ':id') =>
+  `${dashboardBlog()}/${id}`;
+
 export const routes = {
   // Main pages
   home,
@@ -48,4 +64,17 @@ export const routes = {
   // Exposed Platforms pages
   exposedPlatforms,
   exposedPlatformDetail,
+
+  //
+  login,
+  access,
+  dashboard,
+  dashboardAnalytics,
+  dashboardClients,
+  dashboardOverview,
+  dashboardJobSearch,
+  dashboardBlog,
+  dashboardBlogDetails,
+  peopleDetails,
+  people,
 };
